@@ -25,8 +25,6 @@ func deleteFromStringSlice(slice []string, s string) []string {
 
 func findMutualFriends(username string, friendships map[string][]string) []string {
 	// Search all friends of given username's friends: friendsOfFriends
-	// Delete all friends from given username
-	// Delete all duplicates
 	usernameFriends := friendships[username]
 	var friendsOfFriends []string
 	for _, friend := range usernameFriends {
